@@ -2,6 +2,9 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
+# @app.get의 {items_id}: defines parameters. url에서 저 위치의 값을 찾아냄
+# get_item의 items_id : captured value를 함수에 넣는 인자
+## both names must be equal
 
 @app.get("/items/{item_id}")
 def get_item(item_id): # 파라미터 타입 없을 때
@@ -18,4 +21,5 @@ def get_me(): # 파라미터 없음
 
 @app.get("/users/{user_id}")
 def get_user(user_id: str): # 파라미터 string
+    """for clear documentation"""
     return {"user_id": user_id}
