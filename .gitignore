@@ -1,0 +1,39 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+.venv/
+env/
+ENV/
+
+# Environment variables
+.env
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Data files
+*.csv
+*.tsv
+*.xlsx
+
+# Checkpoints / models
+*.pkl
+*.pt
+*.pth
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Jupyter
+.ipynb_checkpoints
